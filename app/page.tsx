@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
+    <body className='bg-black'>
     <main>
       {/* for the network button */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 sm:bottom-20 sm:w-1/2">
@@ -41,12 +42,13 @@ export default function Home() {
       {/* For the logo */}
       <div className="flex justify-center">
         <a className="fixed flex items-center top-7 left-5" href="https://www.linkedin.com/company/lfnbnc">
-          <Image src="/svg.svg" alt="logo" width={80} height={80} />
+          <Image src="/svg.svg" alt="logo" width={60} height={50} />
         </a>
         <div className="fixed flex top-6 left-5">
-          <Image src="/whitesvg.svg" alt="Logo" width={80} height={80} />
+          <Image src="/whitesvg.svg" alt="Logo" width={60} height={50} />
         </div>
       </div>
     </main>
+    </body>
   );
 }
